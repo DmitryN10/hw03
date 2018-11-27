@@ -6,7 +6,7 @@ public class AtomicLongCounter implements Counter {
     private final AtomicLong count = new AtomicLong(0);
 
     @Override
-    public synchronized long incrementAndGet() {
+    public long incrementAndGet() {
         return count.incrementAndGet();
     }
 }
